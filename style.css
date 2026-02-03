@@ -1,40 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Movie Watchlist</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
 
-<body>
-  <header>
-    <h1>🎬 Movie Watchlist</h1>
-    <p>Select movies you want to watch</p>
-  </header>
+header {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
 
-  <div class="movies">
-    <div class="card">
-      <h3>Inception</h3>
-      <p>Sci-Fi, Thriller</p>
-      <button onclick="addMovie('Inception')">Add to Watchlist</button>
-    </div>
+.movies {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
 
-    <div class="card">
-      <h3>Interstellar</h3>
-      <p>Sci-Fi, Drama</p>
-      <button onclick="addMovie('Interstellar')">Add to Watchlist</button>
-    </div>
+.card {
+  background: white;
+  padding: 15px;
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
 
-    <div class="card">
-      <h3>The Dark Knight</h3>
-      <p>Action, Crime</p>
-      <button onclick="addMovie('The Dark Knight')">Add to Watchlist</button>
-    </div>
-  </div>
-
-  <h2>⭐ My Watchlist</h2>
-  <ul id="watchlist"></ul>
-
-  <script src="script.js"></script>
-</body>
-</html>
+button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+      
